@@ -12,12 +12,13 @@ import {
   ImagePlus,
   Pencil,
   Trash2,
-  Settings,
+  Settings2,
   Sun,
   Moon,
   Monitor,
   BotOff,
   ChevronUp,
+  Sparkles,
 } from 'lucide-react';
 import { useI18n } from '@/lib/hooks/use-i18n';
 import { createLogger } from '@/lib/logger';
