@@ -368,7 +368,7 @@ function HomePage() {
           )}
         </div>
 
-        <div className="w-[1px] h-4 bg-gray-200 dark:bg-gray-700" />
+        <div className="w-[1px] h-4 bg-border" />
 
         {/* Theme Selector */}
         <div className="relative">
