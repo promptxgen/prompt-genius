@@ -220,7 +220,7 @@ function HomePage() {
             </p>
           </div>
           <div className="shrink-0 mt-1 text-[10px] font-medium text-amber-500 dark:text-amber-500/70 tracking-wide">
-            <Settings className="size-3.5 animate-[spin_3s_linear_infinite]" />
+            <Settings2 className="size-3.5 animate-[spin_3s_linear_infinite]" />
           </div>
         </div>
       ),
