@@ -1011,7 +1011,7 @@ function ClassroomCard({
           />
         ) : !slide ? (
           <div className="absolute inset-0 flex items-center justify-center">
-            <div className="size-12 rounded-2xl bg-gradient-to-br from-violet-100 to-blue-100 dark:from-violet-900/30 dark:to-blue-900/30 flex items-center justify-center">
+            <div className="size-12 rounded-2xl bg-gradient-to-br from-primary/20 to-cosmic-cyan/20 flex items-center justify-center">
               <span className="text-xl opacity-50">📄</span>
             </div>
           </div>
