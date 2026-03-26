@@ -377,7 +377,7 @@ function HomePage() {
               setThemeOpen(!themeOpen);
               setLanguageOpen(false);
             }}
-            className="p-2 rounded-full text-gray-400 dark:text-gray-500 hover:bg-white dark:hover:bg-gray-700 hover:text-gray-800 dark:hover:text-gray-200 hover:shadow-sm transition-all"
+            className="p-2 rounded-full text-muted-foreground hover:bg-accent hover:text-foreground transition-all"
           >
             {theme === 'light' && <Sun className="w-4 h-4" />}
             {theme === 'dark' && <Moon className="w-4 h-4" />}
