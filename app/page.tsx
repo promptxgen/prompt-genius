@@ -384,7 +384,7 @@ function HomePage() {
             {theme === 'system' && <Monitor className="w-4 h-4" />}
           </button>
           {themeOpen && (
-            <div className="absolute top-full mt-2 right-0 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg shadow-lg overflow-hidden z-50 min-w-[140px]">
+            <div className="absolute top-full mt-2 right-0 glass dark:glass glass-light rounded-xl shadow-lg overflow-hidden z-50 min-w-[140px] glow-violet">
               <button
                 onClick={() => {
                   setTheme('light');
