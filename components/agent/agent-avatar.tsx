@@ -1,6 +1,6 @@
 /**
- * Agent Avatar Component
- * Displays agent avatar and name in chat messages
+ * Agent Avatar Component — Cosmic Glowing Orb Style
+ * Displays agent avatar as a glowing animated orb with agent color
  */
 
 import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar';
@@ -26,20 +26,41 @@ export default function AgentAvatar({ avatar, color, name, size = 'md' }: AgentA
 
   return (
     <div className="flex items-center gap-2 mb-2">
-      <Avatar className={sizeClasses[size]} style={{ borderColor: color, borderWidth: 2 }}>
-        {isUrl(avatar) ? (
-          <>
-            <AvatarImage src={avatar} alt={name} />
-            <AvatarFallback style={{ backgroundColor: `${color}20`, color }}>
-              {name.charAt(0)}
+      <div
+        className="rounded-full"
+        style={{
+          animation: 'cosmic-breathe 3s ease-in-out infinite',
+          ['--glow-color' as string]: `${color}66`,
+        }}
+      >
+        <Avatar
+          className={`${sizeClasses[size]} ring-2`}
+          style={{ borderColor: color, ringColor: color }}
+        >
+          {isUrl(avatar) ? (
+            <>
+              <AvatarImage src={avatar} alt={name} />
+              <AvatarFallback
+                style={{
+                  background: `linear-gradient(135deg, ${color}30, ${color}10)`,
+                  color,
+                }}
+              >
+                {name.charAt(0)}
+              </AvatarFallback>
+            </>
+          ) : (
+            <AvatarFallback
+              style={{
+                background: `linear-gradient(135deg, ${color}30, ${color}10)`,
+                color,
+              }}
+            >
+              {avatar || name.charAt(0)}
             </AvatarFallback>
-          </>
-        ) : (
-          <AvatarFallback style={{ backgroundColor: `${color}20`, color }}>
-            {avatar || name.charAt(0)}
-          </AvatarFallback>
-        )}
-      </Avatar>
+          )}
+        </Avatar>
+      </div>
       <span className="text-sm font-semibold" style={{ color }}>
         {name}
       </span>
