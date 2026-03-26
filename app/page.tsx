@@ -1000,7 +1000,7 @@ function ClassroomCard({
       {/* Thumbnail — large radius, no border, subtle bg */}
       <div
         ref={thumbRef}
-        className="relative w-full aspect-[16/9] rounded-2xl bg-slate-100 dark:bg-slate-800/80 overflow-hidden transition-transform duration-200 group-hover:scale-[1.02]"
+        className="relative w-full aspect-[16/9] rounded-2xl bg-card border border-border overflow-hidden transition-all duration-200 group-hover:scale-[1.02] group-hover:glow-violet"
       >
         {slide && thumbWidth > 0 ? (
           <ThumbnailSlide
