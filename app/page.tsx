@@ -1057,7 +1057,7 @@ function ClassroomCard({
               </span>
               <div className="flex gap-2">
                 <button
-                  className="px-3.5 py-1 rounded-lg text-[12px] font-medium bg-white/15 text-white/80 hover:bg-white/25 backdrop-blur-sm transition-colors"
+                  className="px-3.5 py-1 rounded-full text-[12px] font-medium bg-white/15 text-white/80 hover:bg-white/25 backdrop-blur-sm transition-colors"
                   onClick={onCancelDelete}
                 >
                   {t('common.cancel')}
