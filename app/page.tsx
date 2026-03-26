@@ -558,9 +558,9 @@ function HomePage() {
                 onClick={handleGenerate}
                 disabled={!canGenerate}
                 className={cn(
-                  'shrink-0 h-8 rounded-lg flex items-center justify-center gap-1.5 transition-all px-3',
+                  'shrink-0 h-8 rounded-full flex items-center justify-center gap-1.5 transition-all px-4',
                   canGenerate
-                    ? 'bg-primary text-primary-foreground hover:opacity-90 shadow-sm cursor-pointer'
+                    ? 'bg-gradient-to-r from-primary to-cosmic-cyan text-primary-foreground hover:opacity-90 shadow-lg glow-violet cursor-pointer'
                     : 'bg-muted text-muted-foreground/40 cursor-not-allowed',
                 )}
               >
