@@ -145,8 +145,7 @@ Or manually:
 
 ```bash
 cp .env.example .env.local
-# Edit .env.local with your API keys, then:
-docker compose up --build
+# Edit .env.local with your API keys, 
 ```
 
 ### Optional: MinerU (Advanced Document Parsing)
