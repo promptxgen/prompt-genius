@@ -321,7 +321,7 @@ function HomePage() {
   };
 
   return (
-    <div className="min-h-[100dvh] w-full bg-gradient-to-b from-slate-50 to-slate-100 dark:from-slate-950 dark:to-slate-900 flex flex-col items-center p-4 pt-16 md:p-8 md:pt-16 overflow-x-hidden">
+    <div className="min-h-[100dvh] w-full bg-background flex flex-col items-center p-4 pt-16 md:p-8 md:pt-16 overflow-x-hidden relative">
       {/* ═══ Top-right pill (unchanged) ═══ */}
       <div
         ref={toolbarRef}
