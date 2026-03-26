@@ -1063,7 +1063,7 @@ function ClassroomCard({
                   {t('common.cancel')}
                 </button>
                 <button
-                  className="px-3.5 py-1 rounded-lg text-[12px] font-medium bg-red-500/90 text-white hover:bg-red-500 transition-colors"
+                  className="px-3.5 py-1 rounded-full text-[12px] font-medium bg-destructive/90 text-white hover:bg-destructive transition-colors"
                   onClick={onConfirmDelete}
                 >
                   {t('classroom.delete')}
