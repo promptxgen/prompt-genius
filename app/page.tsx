@@ -345,11 +345,10 @@ function HomePage() {
                   setLocale('zh-CN');
                   setLanguageOpen(false);
                 }}
-                className={cn(
-                  'w-full px-4 py-2 text-left text-sm hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors',
-                  locale === 'zh-CN' &&
-                    'bg-purple-50 dark:bg-purple-900/20 text-purple-600 dark:text-purple-400',
-                )}
+                  className={cn(
+                    'w-full px-4 py-2 text-left text-sm hover:bg-accent transition-colors',
+                    locale === 'zh-CN' && 'bg-primary/10 text-primary',
+                  )}
               >
                 简体中文
               </button>
