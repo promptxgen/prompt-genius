@@ -339,7 +339,7 @@ function HomePage() {
             {locale === 'zh-CN' ? 'CN' : 'EN'}
           </button>
           {languageOpen && (
-            <div className="absolute top-full mt-2 right-0 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg shadow-lg overflow-hidden z-50 min-w-[120px]">
+            <div className="absolute top-full mt-2 right-0 glass dark:glass glass-light rounded-xl shadow-lg overflow-hidden z-50 min-w-[120px] glow-violet">
               <button
                 onClick={() => {
                   setLocale('zh-CN');
