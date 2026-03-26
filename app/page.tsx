@@ -564,8 +564,8 @@ function HomePage() {
                     : 'bg-muted text-muted-foreground/40 cursor-not-allowed',
                 )}
               >
+                <Sparkles className="size-3.5" />
                 <span className="text-xs font-medium">{t('toolbar.enterClassroom')}</span>
-                <ArrowUp className="size-3.5" />
               </button>
             </div>
           </div>
