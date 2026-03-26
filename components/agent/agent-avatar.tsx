@@ -35,7 +35,7 @@ export default function AgentAvatar({ avatar, color, name, size = 'md' }: AgentA
       >
         <Avatar
           className={`${sizeClasses[size]} ring-2`}
-          style={{ borderColor: color, ringColor: color }}
+          style={{ borderColor: color, ['--tw-ring-color' as string]: color }}
         >
           {isUrl(avatar) ? (
             <>
